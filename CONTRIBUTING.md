@@ -1,30 +1,30 @@
 ---
-ms.openlocfilehash: fbd3e506358aa4be60dfe3891b50085691f7443a
-ms.sourcegitcommit: 9d0d10a9e8e5a1d80382d89bc412df287bee03f3
+ms.openlocfilehash: bc39e84debe100762908cda81d2ba8685769aaee
+ms.sourcegitcommit: 3ee5ced77209775eb5e744f68c9235bad8ec2bf4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48822339"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49919543"
 ---
-# <a name="contributing-to-microsoft-graph-training-repositories"></a>Mitwirken an Microsoft Graph-Schulungs-Repositories
+# <a name="contributing-to-microsoft-graph-training-repositories"></a>Beitrag zu Microsoft Graph-Schulungsrepositorys
 
-Vielen Dank, dass Sie zu diesem Projekt beigetragen haben! Beachten Sie Folgendes, bevor Sie Ihre Pull-Anforderung übermitteln.
+Vielen Dank, dass Sie zu diesem Projekt beigetragen haben! Bevor Sie Ihre Pullanforderung übermitteln, sollten Sie Folgendes berücksichtigen.
 
 ## <a name="overview"></a>Übersicht
 
 Der Code in diesem Repository dient drei Zwecken:
 
-- Die Abschlag Dateien im [Lernprogramm](/tutorial) Ordner werden als Lernprogramm auf der Seite [Microsoft Graph Tutorials](https://docs.microsoft.com/graph/tutorials) veröffentlicht.
-- Das Beispielprojekt im [Demo](/demo) Ordner ist die Quelle für einen [Microsoft Graph-Schnellstart](https://developer.microsoft.com/graph/quick-start). * *\** _
-- Das Beispielprojekt im Demo-Ordner ist auch direkt von GitHub herunterladbar und sollte nach einer einfachen Konfiguration wie folgt ausgeführt werden.
+- Die Markdown-Dateien [im](/tutorial) Lernprogrammordner werden als Lernprogramm auf der [Microsoft Graph-Lernprogrammseite](https://docs.microsoft.com/graph/tutorials) veröffentlicht.
+- Das Beispielprojekt im [Demoordner](/demo) ist die Quelle für einen [Microsoft Graph-Schnellstart.*](https://developer.microsoft.com/graph/quick-start) *\** _
+- Das Beispielprojekt im Demoordner kann auch direkt von GitHub heruntergeladen werden und sollte nach einer einfachen Konfiguration wie folgt ausgeführt werden.
 
-> _*\**_ Nicht alle Schulungs-Repositories stehen als Schnellstarts (noch) zur Verfügung.
+> _*\**_ Nicht alle Schulungsrepositorys sind (noch) als Schnellstart verfügbar.
 
-Dies ist wichtig zu beachten, da Änderungen an einer Stelle _may * Änderungen in einem anderen erfordern, damit die Dinge synchron bleiben. Wo möglich, bezieht sich die Abschreibungs Dateien direkt auf die Quellcodedateien (mithilfe einer benutzerdefinierten `:::code` Syntax), sodass durch die Aktualisierung von Code in Source automatisch der Code im Abschlag aktualisiert wird.
+Dies ist wichtig zu beachten, da Änderungen an einem Ort _may* Änderungen an einem anderen erfordern, um die Dinge synchron zu halten. Wenn möglich, verweisen die #A0 direkt (mithilfe einer benutzerdefinierten Syntax) auf die Quellcodedateien, sodass beim Aktualisieren von Code in der Quelle der Code `:::code` in Markdown automatisch aktualisiert wird.
 
 ## <a name="updating-code"></a>Aktualisieren von Code
 
-Die `:::code` beim Abschlag verwendete Syntax hängt von bestimmten Kommentaren in der Quellcodedatei ab. Diese Kommentare sehen wie folgt aus:
+Die `:::code` in Markdown verwendete Syntax hängt von bestimmten Kommentaren in der Quellcodedatei ab. Diese Kommentare sehen wie folgt aus:
 
 ```csharp
 // <MySnippet>
@@ -32,19 +32,19 @@ Console.WriteLine("Hello World!");
 // </MySnippet>
 ```
 
-Wenn Sie Code zwischen diesen "Marker"-Kommentaren aktualisieren, erhalten die Abschlag Dateien automatisch diese Änderungen, wenn Sie auf der Microsoft Graph-Dokumentations Website veröffentlicht werden. Wenn Sie Code außerhalb dieser Kommentare aktualisieren, ist es sehr wahrscheinlich, dass Sie den entsprechenden Abschlag aktualisieren müssen.
+Wenn Sie Code zwischen diesen "Marker"-Kommentaren aktualisieren, erhalten die Markdown-Dateien diese Änderungen automatisch, wenn sie auf der Microsoft Graph-Dokumentationswebsite veröffentlicht werden. Wenn Sie Code außerhalb dieser Kommentare aktualisieren, ist es sehr wahrscheinlich, dass Sie den entsprechenden Markdown aktualisieren müssen.
 
 ## <a name="adding-features"></a>Hinzufügen von Features
 
-Während die Begeisterung geschätzt wird, senden Sie bitte keine Pull-Anforderungen, um dem Beispiel neue Features hinzuzufügen. Da es sich bei diesem Repository hauptsächlich um ein Lernprogramm zum Erstellen Ihrer ersten App handelt, ist die Featuregruppe durch Entwurf beschränkt.
+Die Begeisterung wird zwar geschätzt, aber senden Sie keine Pullanforderungen, um dem Beispiel neue Features hinzuzufügen. Da es sich bei diesem Repository in erster Linie um ein Lernprogramm zum Erstellen Ihrer ersten App handelt, ist der Featuresatz entwurfsweise eingeschränkt.
 
-## <a name="submitting-pull-requests"></a>Senden von Pull-Anforderungen
+## <a name="submitting-pull-requests"></a>Senden von Pullanforderungen
 
-Senden Sie alle Pull-Anforderungen an die `master` Verzweigung.
+Übermitteln Sie alle Pullanforderungen an die `main` Verzweigung.
 
 ## <a name="when-do-changes-get-published"></a>Wann werden Änderungen veröffentlicht?
 
-Die Veröffentlichung von Updates auf der [Microsoft Graph-Lern](https://docs.microsoft.com/graph/tutorials) Programmwebsite ist nicht automatisch. Änderungen müssen zuerst in die Verzweigung heraufgestuft werden `live` , dann muss ein Build von den Websiteadministratoren ausgelöst werden. Dies erfolgt in der Regel auf der Grundlage der erforderlichen Anforderungen.
+Die Veröffentlichung von Updates auf der [Microsoft Graph-Lernprogrammwebsite](https://docs.microsoft.com/graph/tutorials) erfolgt nicht automatisch. Änderungen müssen zuerst in die Verzweigung heraufgestuft werden, dann muss ein `live` Build von den Websiteadministratoren ausgelöst werden. Dies erfolgt in der Regel "nach Bedarf".
 
 ## <a name="code-of-conduct"></a>Verhaltensregeln
 
